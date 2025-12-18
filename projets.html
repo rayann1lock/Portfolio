@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets - Ahongbonon Luc-Mathis</title>
+    <link rel="stylesheet" href="css/style-projets.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">R</div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="parcours.html">Parcours</a>
+                <a href="projets.html" class="active">Projets</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-mini">
+        <div class="hero-content">
+            <h1>Mes Projets</h1>
+            <p>Réalisations techniques en infrastructure, réseau et sécurité</p>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+
+            <!-- Grille des projets -->
+            <div class="projects-grid">
+
+                <!-- Projet 1: Infrastructure e-FTW -->
+                <div class="project-card" data-project="eftw">
+                    <div class="project-icon">🏗️</div>
+                    <h3>Infrastructure e-FTW</h3>
+                    <p class="project-type">🎓 Projet École (ETNA)</p>
+                    <p class="project-description">Conception complète d'une infrastructure sécurisée pour une startup</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Debian</span>
+                        <span class="tech-tag">GitLab</span>
+                        <span class="tech-tag">DNS/DHCP</span>
+                    </div>
+                    <button class="btn-detail">Voir les détails →</button>
+                </div>
+
+                <!-- Projet 2: Réseau Cisco -->
+                <div class="project-card" data-project="cisco">
+                    <div class="project-icon">🌐</div>
+                    <h3>Réseau Cisco Sécurisé</h3>
+                    <p class="project-type">🎓 Projet École (ETNA)</p>
+                    <p class="project-description">Optimisation et sécurisation d'un réseau d'entreprise</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Cisco</span>
+                        <span class="tech-tag">OSPF</span>
+                        <span class="tech-tag">VLAN</span>
+                    </div>
+                    <button class="btn-detail">Voir les détails →</button>
+                </div>
+
+                <!-- Projet 3: Monitoring Docker -->
+                <div class="project-card" data-project="monitoring">
+                    <div class="project-icon">📊</div>
+                    <h3>Stack Monitoring Docker</h3>
+                    <p class="project-type">🎓 Projet École (ETNA)</p>
+                    <p class="project-description">Déploiement d'une solution de monitoring conteneurisée</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                    </div>
+                    <button class="btn-detail">Voir les détails →</button>
+                </div>
+
+                <!-- Projet 4: MCO TERSEDIA -->
+                <div class="project-card" data-project="mco">
+                    <div class="project-icon">🛡️</div>
+                    <h3>MCO & Sécurisation Multi-Clients</h3>
+                    <p class="project-type">🏢 Projet Entreprise (TERSEDIA)</p>
+                    <p class="project-description">Maintenance et sécurisation d'infrastructures clients</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PRTG</span>
+                        <span class="tech-tag">Azure AD</span>
+                        <span class="tech-tag">M365</span>
+                    </div>
+                    <button class="btn-detail">Voir les détails →</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal pour afficher les détails du projet -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Ahongbonon Luc-Mathis Rayann</p>
+            <p class="footer-info">Administrateur d'Infrastructures Sécurisées</p>
+        </div>
+    </footer>
+
+    <script src="js/script-projets.js"></script>
+</body>
+</html>

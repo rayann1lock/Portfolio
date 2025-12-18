@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Parcours - Ahongbonon Luc-Mathis</title>
+    <link rel="stylesheet" href="css/style-parcours.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">R</div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="parcours.html" class="active">Parcours</a>
+                <a href="projets.html">Projets</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-mini">
+        <div class="hero-content">
+            <h1>Mon Parcours</h1>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <div class="main-container">
+
+            <!-- Colonne gauche : Timeline avec ligne droite -->
+            <div class="timeline-column">
+                <!-- Ligne droite verticale -->
+                <div class="timeline-line"></div>
+
+                <!-- Points cliquables sur la ligne -->
+                <div class="timeline-points">
+                    <div class="timeline-point" data-event="bac">
+                        <div class="point-dot"></div>
+                        <div class="point-label">2022</div>
+                    </div>
+
+                    <div class="timeline-point" data-event="bts">
+                        <div class="point-dot"></div>
+                        <div class="point-label">2022-2024</div>
+                    </div>
+
+                    <div class="timeline-point active" data-event="bachelor">
+                        <div class="point-dot pulse"></div>
+                        <div class="point-label">Aujourd'hui</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Colonne droite : Card avec transition -->
+            <div class="card-column">
+
+                <!-- Card Bac -->
+                <div class="detail-card" id="card-bac">
+                    <div class="card-header">
+                        <span class="badge-status">✅ Obtenu</span>
+                        <div class="timeline-date">Juillet 2022</div>
+                    </div>
+
+                    <h2>🎓 Baccalauréat STI2D</h2>
+                    <p class="subtitle">Sciences et Technologies de l'Industrie et du Développement Durable</p>
+
+                    <div class="card-section">
+                        <h3>📚 Formation</h3>
+                        <p>Obtention du baccalauréat technologique avec une spécialisation en systèmes d'information et
+                            numérique.</p>
+                        <ul>
+                            <li>Formation générale et technologique</li>
+                            <li>Spécialisation en numérique</li>
+                            <li>Première étape vers les métiers de l'infrastructure IT</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card BTS -->
+                <div class="detail-card" id="card-bts">
+                    <div class="card-header">
+                        <span class="badge-status">✅ Obtenu</span>
+                        <div class="timeline-date">Septembre 2022 - Juin 2024</div>
+                    </div>
+
+                    <h2>📚 BTS SNIR</h2>
+                    <p class="subtitle">Systèmes Numériques option Informatique et Réseaux</p>
+
+                    <div class="card-section">
+                        <h3>🏢 Alternance</h3>
+                        <p><strong>TERSEDIA</strong> - En délégation complète chez <strong>Groupama Asset Management
+                                (Paris)</strong></p>
+                    </div>
+
+                    <div class="card-section">
+                        <h3>💼 Missions</h3>
+                        <ul>
+                            <li>Support de proximité VIP</li>
+                            <li>Gestion individuelle des utilisateurs exigeants</li>
+                            <li>Développement de la rigueur et du sens du service</li>
+                            <li>Gestion des incidents niveau 1</li>
+                            <li>Assistance utilisateurs sur site à Paris</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-section">
+                        <h3>🛠️ Compétences développées</h3>
+                        <div class="skills-compact">
+                            <span class="skill-tag">Support N1</span>
+                            <span class="skill-tag">Windows</span>
+                            <span class="skill-tag">Service Client VIP</span>
+                            <span class="skill-tag">Ticketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bachelor (unique) -->
+                <div class="detail-card active" id="card-bachelor">
+                    <div class="card-header">
+                        <span class="badge-status">⏳ En cours</span>
+                        <div class="timeline-date">Septembre 2024 - Janvier 2026</div>
+                    </div>
+
+                    <h2>🚀 Bachelor ETNA - Administrateur Junior</h2>
+                    <p class="subtitle">Administrateur d'Infrastructures Sécurisées (RNCP Niveau 6)</p>
+
+                    <div class="card-section">
+                        <h3>🏢 Entreprise d'accueil</h3>
+                        <p><strong>TERSEDIA</strong> (directement) - Centre de Services, Infogrance & Cybersécurité</p>
+                        <p>Passage de la gestion utilisateur VIP à la gestion globale des systèmes et infrastructures.
+                        </p>
+                    </div>
+
+                    <div class="card-section">
+                        <h3>💼 Missions principales</h3>
+                        <ul>
+                            <li>MCO multi-clients (PME, ETI, Secteur Public)</li>
+                            <li>Supervision proactive avec PRTG Network Monitor</li>
+                            <li>Administration hybride Active Directory / Azure AD</li>
+                            <li>Hardening système et politique de sécurité</li>
+                            <li>Gestion Microsoft 365 (Exchange, SharePoint)</li>
+                            <li>Support infrastructure niveau 2/3</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-section">
+                        <h3>🎓 Projets d'école (ETNA)</h3>
+                        <div class="project-list">
+                            <div class="project-item">
+                                <strong>Infrastructure e-FTW</strong>
+                                <span>Conception complète d'une infra sécurisée - Debian, DNS/DHCP, GitLab, Centreon,
+                                    Fail2Ban</span>
+                            </div>
+                            <div class="project-item">
+                                <strong>Architecture Réseau Cisco</strong>
+                                <span>Optimisation réseau avec OSPF, VLAN 802.1Q, ACL étendues, Port Security</span>
+                            </div>
+                            <div class="project-item">
+                                <strong>Stack Monitoring Docker</strong>
+                                <span>Déploiement Prometheus, Grafana, Node Exporter en conteneurs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-section">
+                        <h3>🏢 Projet d'entreprise (TERSEDIA)</h3>
+                        <div class="project-list">
+                            <div class="project-item">
+                                <strong>MCO & Sécurisation Multi-Clients</strong>
+                                <span>Supervision PRTG, Administration Azure AD, Gestion M365, Support N2/N3, Hardening
+                                    système</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-section">
+                        <h3>🛠️ Stack technique actuelle</h3>
+                        <div class="skills-compact">
+                            <span class="skill-tag">VMware vSphere</span>
+                            <span class="skill-tag">Active Directory</span>
+                            <span class="skill-tag">Azure AD</span>
+                            <span class="skill-tag">PRTG</span>
+                            <span class="skill-tag">VPN</span>
+                            <span class="skill-tag">Support N1/N2</span>
+                            <span class="skill-tag">Déploiement Postes</span>
+                            <span class="skill-tag skill-tag-more">...</span>
+                        </div>
+                    </div>
+
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Projets RNCP</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Ans alternance</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Intéressé par mon profil ?</h2>
+            <p>Découvrez mes projets en détail ou contactez-moi</p>
+            <div class="cta-buttons">
+                <a href="index.html#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="index.html#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Ahongbonon Luc-Mathis Rayann</p>
+            <p class="footer-info">Administrateur d'Infrastructures Sécurisées</p>
+        </div>
+    </footer>
+
+    <script src="js/script-parcours.js"></script>
+</body>
+
+</html>

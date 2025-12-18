@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ahongbonon Luc-Mathis</title>
+    <link rel="stylesheet" href="css/style-contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">R</div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="parcours.html">Parcours</a>
+                <a href="projets.html">Projets</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-mini">
+        <div class="hero-content">
+            <h1>Me Contacter</h1>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+
+            <div class="contact-layout">
+
+                <!-- Colonne gauche: Informations -->
+                <div class="contact-info">
+                    <h2>Restons en contact</h2>
+                    <p>Je suis disponible pour échanger sur des opportunités professionnelles, des projets techniques ou simplement pour répondre à vos questions.</p>
+
+                    <div class="info-cards">
+
+                        <div class="info-card">
+                            <div class="info-icon">💼</div>
+                            <h3>LinkedIn</h3>
+                            <p>Ahongbonon Luc-Mathis</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">💻</div>
+                            <h3>GitHub</h3>
+                            <p>@votre-github</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">🎓</div>
+                            <h3>Formation</h3>
+                            <p>Bachelor ETNA - TERSEDIA</p>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h3>📅 Disponibilité</h3>
+                        <p>Actuellement en alternance jusqu'en <strong>Janvier 2026</strong></p>
+                        <p>Ouvert aux discussions pour des opportunités futures</p>
+                    </div>
+                </div>
+
+                <!-- Colonne droite: Formulaire -->
+                <div class="contact-form-container">
+                    <h2>Envoyez-moi un message</h2>
+                    <form id="contact-form" class="contact-form">
+
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required placeholder="Prenom Nom">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="xyz@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="opportunite">Opportunité professionnelle</option>
+                                <option value="projet">Discussion projet</option>
+                                <option value="question">Question technique</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">Envoyer le message</span>
+                            <span class="btn-loader" style="display: none;">Envoi en cours...</span>
+                        </button>
+
+                        <div id="form-message" class="form-message"></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Ahongbonon Luc-Mathis Rayann</p>
+            <p class="footer-info">Administrateur d'Infrastructures Sécurisées</p>
+        </div>
+    </footer>
+
+    <script src="js/script-contact.js"></script>
+</body>
+</html>
